@@ -1,0 +1,30 @@
+{
+  "name": "@chickendinosaur/generator-react-component",
+  "version": "0.0.1",
+  "description": "Scaffolding generator for React components.",
+  "main": "generators/app/index.js",
+  "scripts": {},
+  "keywords": [
+    "yeoman-generator",
+    "reactjs",
+    "component"
+  ],
+  "author": "John Pittman",
+  "license": "MIT",
+  "files": [
+    "generators"
+  ],
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chickendinosaur/yeoman-generator-react-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chickendinosaur/yeoman-generator-react-component/issues"
+  },
+  "homepage": "https://github.com/chickendinosaur/yeoman-generator-react-component#readme",
+  "dependencies": {
+    "@chickendinosaur/generator-node-package": "*",
+    "yeoman-generator": "^1.1.0"
+  }
+}
