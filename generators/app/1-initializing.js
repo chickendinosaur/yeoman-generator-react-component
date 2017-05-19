@@ -4,6 +4,14 @@ const arrayUnion = require('array-union');
 
 module.exports = function () {
   this.composeWith(require.resolve('@chickendinosaur/generator-node-package'), {
+    babel: {
+    	presets: [
+        'react',
+        'es2015',
+        'stage-2'
+      ],
+    	plugins: []
+    },
     devDependencies: [
       '@kadira/storybook',
       'babel-preset-es2015',
