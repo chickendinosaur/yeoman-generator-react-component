@@ -1,4 +1,4 @@
-Scaffolding generator for nodejs packages.
+Scaffolding generator for React components.
 
 ---
 
@@ -9,15 +9,17 @@ Scaffolding generator for nodejs packages.
 ### npm
 
 npm install yeoman -g
-npm install @chickendinosaur/generator-node-package
+npm install @chickendinosaur/generator-react-component
 
 ## Usage
 
-### yo @chickendinosaur/node-package
+### yo @chickendinosaur/react-component
 
 #### Contains
 - Everything that a npm package needs to publish.
 - Default test suite. (tape)
+- React storybook for testing presentation components visually.
+- Benchmarking for React component rendering.
 
 #### Script
 
@@ -26,6 +28,7 @@ npm install @chickendinosaur/generator-node-package
 * npm run clean
 * npm run deploy
 * npm run test
+* npm run storybook
 
 ---
 
@@ -33,8 +36,8 @@ npm install @chickendinosaur/generator-node-package
 
 ## Installation
 
-* git clone git@github.com:chickendinosaur/yeoman-generator-node-package.git
-* cd yeoman-generator-node-package
+* git clone git@github.com:chickendinosaur/yeoman-generator-react-component.git
+* cd yeoman-generator-react-component
 * npm install
 * npm link
 
