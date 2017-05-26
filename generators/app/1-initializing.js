@@ -1,7 +1,5 @@
 'use strict';
 
-const arrayUnion = require('array-union');
-
 module.exports = function () {
   this.composeWith(require.resolve('@chickendinosaur/generator-node-package'), {
     babel: {

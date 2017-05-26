@@ -2,7 +2,6 @@
 
 const tape = require('tape');
 const tapes = require('tapes');
-const React = require('react');
 
 const describe = tapes(tape, {
   delimiter: '.'
