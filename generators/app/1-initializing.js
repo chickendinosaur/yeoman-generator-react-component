@@ -27,6 +27,10 @@ module.exports = function () {
       'react-hot-loader@next',
       'style-loader'
     ],
+    pkgPeerDependencies: {
+      'react': '*',
+      'react-dom': '*'
+    },
     peerDependencies: [
       'react@*',
       'react-dom@*'
