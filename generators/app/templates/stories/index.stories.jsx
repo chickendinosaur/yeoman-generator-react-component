@@ -1,6 +1,8 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
 
+import Component from '../src/index.jsx';
+
 storiesOf('Component', module)
   .addDecorator((story) => {
     return (
@@ -11,6 +13,8 @@ storiesOf('Component', module)
   })
   .add('default', () => {
     return (
-      null
+      <Component
+        onClick={action('click')}
+      />
     );
   });

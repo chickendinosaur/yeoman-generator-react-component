@@ -1,16 +1,18 @@
-require('lodash');
-const Benchmark = require('benchmark');
-const React = require('react');
-const ReactDOM = require('react-dom');
+import 'lodash';
+import Benchmark from 'benchmark';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import Component from '../src/index.jsx';
 
 const suite = new Benchmark.Suite();
 window.Benchmark = Benchmark;
 
+const rootEl = document.createElement('div');
+
 /*
 Setup
 */
-
-const rootEl = document.createElement('div');
 
 /*
 Benchmark
@@ -18,7 +20,7 @@ Benchmark
 
 suite
     .add('render', function () {
-      ReactDOM.render(null, rootEl);
+      ReactDOM.render(<Component />, rootEl);
     })
     .on('cycle', function (event) {
       let output = String(event.target);

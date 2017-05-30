@@ -1,7 +1,7 @@
 'use strict';
 
-const tape = require('tape');
-const tapes = require('tapes');
+import tape from 'tape';
+import tapes from 'tapes';
 
 const describe = tapes(tape, {
   delimiter: '.'

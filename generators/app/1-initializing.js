@@ -40,7 +40,7 @@ module.exports = function () {
       'build': 'npm run clean && babel src -d lib && cp package.json lib & cp README.md lib & cp LICENSE lib',
       'clean': 'rm -rf lib',
       'deploy': 'npm run test && npm run build && npm publish lib',
-      'storybook': 'npm run test && opn http://localhost:9001 && start-storybook -p 9001 -c .storybook',
+      'storybook': 'npm run test && opn http://localhost:9999 && start-storybook -p 9999 -c .storybook',
       'test': 'babel-tape-runner test/**/*.test.* && eslint src --fix && eslint stories --fix && csscomb src'
   	}
   });
