@@ -42,7 +42,7 @@ module.exports = function () {
       'lint': 'eslint "src/**/*.{jsx,js}" --fix && eslint "stories/**/*.{jsx,js}" --fix && eslint "test/**/*.{jsx,js}" --fix && csscomb src',
       "prepublish": "npm run test && npm run lint && npm run build",
       'storybook': 'npm run test && opn http://localhost:9999 && start-storybook -p 9999 -c .storybook',
-      'test': 'babel-tape-runner test/**/*.test.* && eslint src --fix && eslint stories --fix && csscomb src'
+      'test': 'babel-tape-runner test/**/*.spec.js | tap-spec'
   	}
   });
 };
