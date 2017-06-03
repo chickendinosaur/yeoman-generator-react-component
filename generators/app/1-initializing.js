@@ -36,13 +36,13 @@ module.exports = function () {
       'react-dom@*'
     ],
     scripts: {
-      'benchmark': 'cd benchmark && for /R %i in (*.benchmark.*) do echo. && echo %i && echo. && browserify -t babelify %i | browser-run',
+      'benchmark': 'cd benchmark && for /R %i in (*.benchmark.{jsx,js}) do echo. && echo %i && echo. && browserify -t babelify %i | browser-run',
       'build': 'npm run clean && babel src -d lib',
       'clean': 'rm -rf lib',
       'lint': 'eslint "src/**/*.{jsx,js}" --fix && eslint "stories/**/*.{jsx,js}" --fix && eslint "test/**/*.{jsx,js}" --fix && csscomb src',
       "prepublish": "npm run test && npm run lint && npm run build",
       'storybook': 'npm run test && opn http://localhost:9999 && start-storybook -p 9999 -c .storybook',
-      'test': 'babel-tape-runner test/**/*.spec.js | tap-spec'
+      "test": "babel-tape-runner test/**/*.spec.{jsx,js} | tap-spec"
   	}
   });
 };
